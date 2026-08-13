@@ -1,175 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- AJUSTADO: Nome do site na aba do navegador -->
-  <title>Glaucoma: Mitos e Verdades Sobre</title>
-  <!-- AJUSTADO: Nome do arquivo CSS corrigido de styles.css para style.css -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glaucoma & Tecnociência: Robótica na Saúde</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <!-- AJUSTADO: Título principal do site atualizado -->
-    <h1>Glaucoma: Mitos e Verdades Sobre</h1>
-    <p>Inovação, Robótica e Programação Aplicadas à Saúde Ocular</p>
-    <span class="badge-disciplina">Projeto em Dupla • Tecnociência, Robótica e Programação</span>
-  </header>
-
-  <main>
-    <!-- Seção 1: Pesquisa Teórica -->
-    <section id="pesquisa">
-      <h2>Conceito Teórico e Contexto</h2>
-      <p>
-        O glaucoma é uma neuropatia óptica progressiva caracterizada pela lesão irreversível do nervo óptico, frequentemente relacionada ao aumento da pressão intraocular (PIO). Por ser assintomático em suas fases iniciais, o diagnóstico precoce é o único meio eficaz de prevenção da cegueira.
-      </p>
-      <p>
-        No âmbito da <strong>Tecnociência</strong>, avanços em visão computacional, inteligência artificial e micro-robótica vêm transformando a oftalmologia. Sistemas automatizados analisam exames de imagem da retina (como OCT) em segundos, auxiliando especialistas a detectar microalterações estruturais antes do surgimento dos primeiros sintomas.
-      </p>
-
-      <div class="stats-box">
-        <h3>Dados e Estatísticas Atualizadas</h3>
-        <ul>
-          <li><strong>Global:</strong> A Organização Mundial da Saúde (OMS) estima mais de 80 milhões de casos de glaucoma no mundo.</li>
-          <li><strong>Subdiagnóstico:</strong> Cerca de 50% dos portadores da doença não sabem que a possuem devido à ausência de dor inicial.</li>
-          <li><strong>Precisão Tecnológica:</strong> Algoritmos de Deep Learning atingem taxas de acurácia acima de 92% na triagem do nervo óptico.</li>
-        </ul>
-      </div>
-
-      <h3>Fontes de Pesquisa Utilizadas</h3>
-      <ul>
-        <li><a href="https://cbo.com.br" target="_blank" rel="noopener noreferrer">Conselho Brasileiro de Oftalmologia (CBO)</a></li>
-        <li><a href="https://who.int" target="_blank" rel="noopener noreferrer">Organização Mundial da Saúde (OMS / WHO)</a></li>
-        <li><a href="https://ieee.org" target="_blank" rel="noopener noreferrer">IEEE Transactions on Biomedical Engineering</a></li>
-      </ul>
-    </section>
-
-    <!-- Seção 2: Aulas Práticas de Robótica -->
-    <section id="robotica">
-      <h2>Aplicação Prática: Nossas Aulas de Robótica</h2>
-      <p class="sub-instrucoes">Registro dos protótipos e experimentos desenvolvidos durante as aulas práticas de Robótica e Programação.</p>
-
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <!-- AJUSTADO: Caminho exato com a extensão foto1.jpg.jpeg -->
-          <img src="assets/foto1.jpg" alt="Protótipo com sensores de detecção">
-          <div class="caption">
-            <h4>Montagem de Sensores</h4>
-            <p>Testes de calibragem com sensores ultrassônicos e de luminosidade para simular medições automáticas de pressão e distância.</p>
-          </div>
+    <!-- Cabeçalho Principal -->
+    <header class="hero">
+        <div class="container hero-content">
+            <span class="badge">Tecnociência, Robótica e Programação</span>
+            <h1>Glaucoma & Tecnociência</h1>
+            <p class="subtitle">A revolução da Robótica e da Inteligência Artificial no diagnóstico precoce da saúde ocular</p>
         </div>
+    </header>
 
-        <div class="gallery-item">
-          <!-- AJUSTADO: Caminho exato com a extensão foto2.jpg.jpeg -->
-          <img src="assets/foto2.jpg" alt="Programação de microcontroladores">
-          <div class="caption">
-            <h4>Programação do Circuito</h4>
-            <p>Desenvolvimento do código em C++/Python para leitura de dados e comunicação em tempo real com a interface web.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção 3: Flashcards Interativos -->
-    <section id="flashcards-section">
-      <h2>Flashcards Interativos: Mitos, Fatos e Tecnologias</h2>
-      <p class="sub-instrucoes">Clique em qualquer card para girá-lo e ver a resposta no verso!</p>
-
-      <div class="flashcards-grid">
+    <main class="container">
         
-        <!-- Card 1 -->
-        <div class="card" onclick="flipCard(this)">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-number">Card 01</span>
-              <p><strong>Mito ou Verdade?</strong><br>O glaucoma sempre causa dor nos olhos no início.</p>
-              <span class="click-hint">Clique para virar 🔄</span>
+        <!-- Seção 1: Pesquisa Teórica -->
+        <section class="section">
+            <h2>01. Pesquisa Teórica: O Papel da Tecnologia</h2>
+            <div class="text-grid">
+                <div class="text-card">
+                    <h3>O que é o Glaucoma?</h3>
+                    <p>
+                        O glaucoma é uma neuropatia óptica progressiva caracterizada pela perda gradual de fibras nervosas do nervo óptico, frequentemente associada ao aumento da pressão intraocular (PIO). Por ser uma doença assintomática nas fases iniciais, é considerada uma das principais causas de cegueira irreversível no mundo.
+                    </p>
+                </div>
+                <div class="text-card">
+                    <h3>IA e Visão Computacional</h3>
+                    <p>
+                        A integração de Algoritmos de Visão Computacional e Aprendizado de Máquina (Machine Learning) na medicina permite analisar fotografias de fundo de olho e exames de Tomografia de Coerência Óptica (OCT) com alta precisão. Sistemas robóticos auxiliam no rastreamento automatizado, identificando padrões imperceptíveis ao olho humano nos estágios primários.
+                    </p>
+                </div>
             </div>
-            <div class="card-back">
-              <p><strong>MITO!</strong><br>A forma mais comum (ângulo aberto) é silenciosa, progressiva e não apresenta dor ou sintomas visíveis nas fases iniciais.</p>
+
+            <!-- Caixa de Estatísticas e Fontes -->
+            <div class="stats-box">
+                <div class="stat-item">
+                    <h4>+80 Milhões</h4>
+                    <p>De pessoas afetadas pelo glaucoma no mundo.</p>
+                </div>
+                <div class="stat-item">
+                    <h4>90%</h4>
+                    <p>Dos casos de cegueira podem ser evitados com diagnóstico precoce.</p>
+                </div>
+                <div class="stat-item sources">
+                    <h4>Fontes Médicas Reais</h4>
+                    <ul>
+                        <li><a href="https://www.cbo.com.br/" target="_blank" rel="noopener noreferrer">Conselho Brasileiro de Oftalmologia (CBO)</a></li>
+                        <li><a href="https://www.who.int/" target="_blank" rel="noopener noreferrer">Organização Mundial da Saúde (OMS)</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </section>
+
+        <!-- Seção 2: Aulas Práticas -->
+        <section class="section">
+            <h2>02. Registros das Aulas Práticas</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <div class="img-wrapper">
+                        <img src="assets/foto1.jpeg" alt="Montagem de Sensores Biomédicos">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Montagem de Sensores</h3>
+                        <p>Prototipagem de circuito com sensores ópticos para aferição e simulação de sinais biomédicos em bancada.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="img-wrapper">
+                        <img src="assets/foto2.jpeg" alt="Programação de Algoritmos de Diagnóstico">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Programação do Sistema</h3>
+                        <p>Desenvolvimento dos scripts em C++/Python para leitura de dados e processamento de imagens oftálmicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Flashcards Interativos -->
+        <section class="section">
+            <h2>03. Flashcards Interativos: Mitos & Verdades</h2>
+            <p class="section-desc">Clique nos cards para virar e testar seus conhecimentos sobre o glaucoma e sua relação com a tecnologia.</p>
+
+            <div class="flashcards-grid">
+                
+                <!-- Card 1 -->
+                <div class="flashcard" onclick="flipCard(this)">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-type">Conceito</span>
+                            <h3>O que causa o glaucoma?</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p>É uma lesão no nervo óptico, na maioria das vezes provocada pelo aumento da pressão dentro do olho.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flashcard" onclick="flipCard(this)">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-type">Mito ou Verdade?</span>
+                            <h3>O glaucoma tem cura se descoberto no início.</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Mito!</strong> O glaucoma não tem cura, mas tem controle. O diagnóstico precoce evita a perda da visão.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flashcard" onclick="flipCard(this)">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-type">Mito ou Verdade?</span>
+                            <h3>A doença dá sinais e dor nos olhos logo no começo.</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Mito!</strong> Na maioria dos casos (ângulo aberto), o glaucoma é silencioso e não causa dor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flashcard" onclick="flipCard(this)">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-type">Tecnociência</span>
+                            <h3>Como a Robótica ajuda na detecção?</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p>Através de tonômetros automatizados e câmeras de alta precisão acopladas a sistemas robóticos de triagem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="flashcard" onclick="flipCard(this)">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-type">Tecnociência</span>
+                            <h3>Qual o papel da Inteligência Artificial?</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p>A IA analisa exames de imagem e compara com milhares de padrões, identificando lesões antes de sintomas visíveis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="flashcard" onclick="flipCard(this)">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-type">Prevenção</span>
+                            <h3>Quem deve fazer exames preventivos?</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p>Todos, especialmente pessoas acima de 40 anos, com histórico familiar, diabéticos ou altos míopes.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Projeto Escolar: Glaucoma & Tecnociência — Desenvolvido para a disciplina de Tecnociência, Robótica e Programação.</p>
         </div>
+    </footer>
 
-        <!-- Card 2 -->
-        <div class="card" onclick="flipCard(this)">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-number">Card 02</span>
-              <p><strong>Inovação Tecnológica</strong><br>Como a Inteligência Artificial auxilia no diagnóstico?</p>
-              <span class="click-hint">Clique para virar 🔄</span>
-            </div>
-            <div class="card-back">
-              <p>Algoritmos de visão computacional processam exames de retinografia e OCT em segundos, identificando padrões de escavação do nervo óptico.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card" onclick="flipCard(this)">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-number">Card 03</span>
-              <p><strong>Mito ou Verdade?</strong><br>A perda de visão causada pelo glaucoma é reversível.</p>
-              <span class="click-hint">Clique para virar 🔄</span>
-            </div>
-            <div class="card-back">
-              <p><strong>MITO!</strong><br>O dano ao nervo óptico é irreversível. O tratamento com colírios, laser ou cirurgia visa conter a progressão da doença.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card" onclick="flipCard(this)">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-number">Card 04</span>
-              <p><strong>Conceito Científico</strong><br>O que é a Pressão Intraocular (PIO)?</p>
-              <span class="click-hint">Clique para virar 🔄</span>
-            </div>
-            <div class="card-back">
-              <p>É a pressão do líquido (humor aquoso) dentro do olho. Quando o escoamento desse líquido falha, o aumento da PIO danifica as fibras ópticas.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card" onclick="flipCard(this)">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-number">Card 05</span>
-              <p><strong>Robótica Aplicada</strong><br>Qual a função das lentes inteligentes vestíveis?</p>
-              <span class="click-hint">Clique para virar 🔄</span>
-            </div>
-            <div class="card-back">
-              <p>São dispositivos equipados com microssensores capazes de monitorar as variações da pressão ocular continuamente por 24 horas.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="card" onclick="flipCard(this)">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-number">Card 06</span>
-              <p><strong>Mito ou Verdade?</strong><br>Apenas pessoas idosas podem ter glaucoma.</p>
-              <span class="click-hint">Clique para virar 🔄</span>
-            </div>
-            <div class="card-back">
-              <p><strong>MITO!</strong><br>Apesar de ser mais predominante em adultos acima de 40 anos, existem diagnósticos de glaucoma congênito e juvenil.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Trabalho desenvolvido em dupla para a disciplina de <strong>Tecnociência, Robótica e Programação</strong>.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
